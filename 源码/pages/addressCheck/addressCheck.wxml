@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="top">
+		<view class="common">
+		 <view><text>常用车站</text></view>
+		 	<view class="addresData">
+			 <view class="addressItem" wx:for="{{obj.commonList}}" wx:key="index" data-address_name="{{item}}" bindtap="goTrain">
+				{{item}}
+			 </view>
+		 	</view>
+		</view>
+		<view class="hot">
+			<view><text>热门车站</text></view>
+			<view class="addresData">
+			 <view class="addressItem" wx:for="{{obj.hotList}}" wx:key="index" data-address_name="{{item}}" bindtap="goTrain">
+				{{item}}
+			 </view>
+		 	</view>
+		</view>
+	</view>
+	<view class="bottom">
+	</view>
+</view>

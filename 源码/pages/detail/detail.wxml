@@ -1,0 +1,52 @@
+<view class="main">
+	<view class="detail_view" wx:for="{{detailList}}" wx:key="index">
+		<view class="top">
+			<view class="one">
+				<view class="startTime">
+					{{item.startTime}}
+				</view>
+				<view class="start" >
+					{{item.start}}
+				</view>
+			</view>
+			<view class="two">
+				<view class="time" >
+					{{item.time}}
+				</view>
+				<view class="plateNumber">
+					{{item.plateNumber}}
+				</view>
+			</view>
+			<view class="three">
+				<view class="endTime" >
+					{{item.endTime}}
+				</view>
+				<view class="end" >
+					{{item.end}}
+				</view>
+			</view>
+			<view class="four">
+				<view class="price">{{item.price}}</view>
+			</view>
+		</view>
+		<view class="bottom">
+			<view class="one">
+			二等座 {{item.class2}}
+			</view>
+			<view class="two">
+				一等座 {{item.class1}}
+			</view>
+			<view class="three">
+				商务座 {{item.class3}}
+			</view>
+			<view class="four">
+				<button size="mini" bindtap="buyFare"
+				style="color: white; background-color:#1E90FF !important;"
+				data-id="{{item.id}}"
+				>+订票</button>
+			</view>
+		</view>
+	</view>
+</view>
+
+

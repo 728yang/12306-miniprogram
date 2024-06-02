@@ -1,0 +1,27 @@
+<view class="main">
+<view class="avatar">
+   <image src="{{userInfo.avatar ? userInfo.avatar : '/images/用户头像.png'}}" bind:tap="profile" />
+   <view>{{userInfo.nickname ? userInfo.nickname : '12306账户'}}</view>
+</view>
+<view class="icons">
+  <view class="icon">
+    <image src="/images/等待支付.png" mode="widthFix"/>
+    <view>待支付</view>
+  </view>
+  <view class="icon">
+    <image src="/images/添加订单.png" mode="widthFix"/>
+    <view>已候补订单</view>
+  </view>
+  <view class="icon" bindtap="goOrder">
+    <image src="/images/车票-copy.png" mode="widthFix"/>
+    <view >我的车票</view>
+  </view>
+</view>
+<view class="menus">
+  <view class="menu arrow" bind:tap="profile">个人资料</view>
+  <view class="menu arrow" bind:tap="order">乘车人</view>
+  <view class="menu arrow" bind:tap="address">更多查询</view>
+  <view class="menu arrow" bind:tap="contact">客服联系方式</view>
+</view>
+
+</view>

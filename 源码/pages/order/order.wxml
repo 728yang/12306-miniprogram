@@ -1,0 +1,43 @@
+<view class="main">
+	<view>
+		<text style="font-size: larger;">您的车票信息：</text>
+	</view>
+	<block wx:if="{{flag}}">
+	<view class="detail_view" wx:for="{{orderList}}" wx:key="id">
+		<view class="top">
+			<view class="one">
+				<view class="startTime">
+				{{item.startTime}}
+				</view>
+				<view class="start">
+					{{item.start}}
+				</view>
+			</view>
+			<view class="two">
+				<view class="time">
+				{{item.time}}
+				</view>
+				<view class="plateNumber">
+				{{item.plateNumber}}
+				</view>
+			</view>
+			<view class="three">
+				<view class="endTime">
+					{{item.endTime}}
+				</view>
+				<view class="end">
+					{{item.end}}
+				</view>
+			</view>
+		</view>
+		<view class="bottom">
+			<view class="one" >
+				您已预定二等座! 
+			</view>
+		</view>
+	</view>
+	</block>
+	<view class="noBuy" wx:else>
+				您还没有预定车票！
+	</view>
+</view>

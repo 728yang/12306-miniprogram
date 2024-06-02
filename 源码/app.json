@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/train/train",
+    "pages/plane/plane",
+    "pages/bus/bus",
+    "pages/user/user",
+    "pages/addressCheck/addressCheck",
+    "pages/detail/detail",
+    "pages/order/order"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "首页",
+    "navigationBarBackgroundColor": "#1E90FF"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/train/train",
+        "text": "火车",
+        "iconPath": "images/火车票.png",
+        "selectedIconPath": "images/火车票.png"
+      },
+      {
+        "pagePath": "pages/plane/plane",
+        "text": "飞机",
+        "iconPath": "images/飞机票预订.png",
+        "selectedIconPath": "images/飞机票预订.png"
+      },
+      {
+        "pagePath": "pages/bus/bus",
+        "text": "汽车",
+        "iconPath": "images/汽车票.png",
+        "selectedIconPath": "images/汽车票.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/个人中心.png",
+        "selectedIconPath": "images/个人中心.png"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
